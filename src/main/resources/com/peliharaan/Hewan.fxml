@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="150.0" spacing="2.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.peliharaan.HewanController">
+   <children>
+      <AnchorPane prefHeight="270.0" prefWidth="207.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="200.0" fitWidth="144.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblRas" contentDisplay="CENTER" layoutX="53.0" layoutY="229.0" prefHeight="18.0" prefWidth="91.0" text="Ras" wrapText="true" />
+            <Label fx:id="lblNama" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="205.0" prefHeight="18.0" prefWidth="127.0" text="Nama" textAlignment="CENTER" />
+            <Label fx:id="lblUmur" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="229.0" text="12" textAlignment="CENTER" />
+            <Label fx:id="lblAdopsi" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="252.0" prefHeight="18.0" prefWidth="119.0" text="Belum Diadopsi" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="43.0" layoutY="229.0" text="•" textAlignment="CENTER" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="229.0" text="thn" textAlignment="CENTER" />
+            <HBox fx:id="HboxBtn" layoutY="171.0" prefHeight="35.0" prefWidth="152.0">
+               <children>
+                  <AnchorPane prefHeight="35.0" prefWidth="150.0">
+                     <children>
+                        <Button fx:id="btnHapus" layoutX="88.0" mnemonicParsing="false" text="Hapus" />
+                        <Button fx:id="btnUbah" layoutX="14.0" mnemonicParsing="false" text="Ubah" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <CheckBox fx:id="chkBox" layoutX="64.0" layoutY="173.0" mnemonicParsing="false" />
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+   <effect>
+      <DropShadow />
+   </effect>
+   <opaqueInsets>
+      <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+   </opaqueInsets>
+</VBox>
